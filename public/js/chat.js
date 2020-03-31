@@ -129,6 +129,8 @@ document.querySelector("#submit-btn").addEventListener('click',function(e){
         from:'user',
         text:document.querySelector('input[name="message"]').value
     },function(){})
+    let msg=document.getElementById('msg');
+    msg.value='';
 })
 
 // sending location here

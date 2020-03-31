@@ -34,7 +34,6 @@ io.on('connection',(socket)=>{
             io.to(user.room).emit('newMessage',generateMessage(user.name,msg.text));
         }
         
-         
 
         // broadcasting the message from single user to every user in the network
        // io.emit('newMessage',generateMessage(msg.from,msg.text));
